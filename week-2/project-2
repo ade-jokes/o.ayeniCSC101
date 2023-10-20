@@ -1,0 +1,19 @@
+fn main(){
+	//amount
+	let t:f64 = 450_000.00;
+	let m:f64 = 1_500_000.0;
+	let h
+	let d
+	let a
+
+	//quantity
+	let qt
+	let qm
+	let qh
+	let qd
+	let qa
+
+	//sum
+	let s = ( t * qt) + (m * qm) + (d * qd) + (a *qa);
+	pr
+}
