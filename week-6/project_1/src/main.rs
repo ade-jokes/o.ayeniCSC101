@@ -11,8 +11,9 @@ fn main() {
     let mut level = String::new(); // 100l - 400l
     let mut state_of_origin = String::new();
         println!("Hello there,");
-    for y in 0..150
+    for y in 1..151
     {
+         println!("YOU ARE THE {} CANDIDATE", y );
 
         println!("ENTER YOUR FIRST NAME");
         io::stdin().read_line(&mut first_name).expect("Failed to input");
@@ -46,21 +47,22 @@ fn main() {
         io::stdin().read_line(&mut input1).expect("Failed to read");
         let input1:f32 = input1.trim().parse().expect("Failed to input");
 
-         println!("YOU ARE THE {} CANDIDATE", y );
+        
 
-
-        if class_rep == false && input1 >= 4.00 && level == 200 ||level ==300 || level == 400
+        if class_rep == false && input1 <= 4.00 && level == 200 ||level ==300 || level == 400
         { 
-            println!("{} 
-                      {} 
-                      {} 
-                      {} 
-                      {} 
-                      {}
+            println!("{}\n {}\n {}\n {}\n {}\n{}
                       You can vote",first_name,sur_name, email, department, level, state_of_origin);
         }
         else 
-        { println!("Sorry, You cannot vote"); } }
+        { 
+
+            println!("Sorry, You cannot vote");
+
+
+         } 
+
+    }
          
 
 }

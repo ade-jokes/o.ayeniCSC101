@@ -8,6 +8,9 @@ fn main() {
  for  f in 1..500
   { 
          println!("You are Reasercher {} ",f );
+
+
+         
         println!("Please Enter your full Name");
         io::stdin().read_line(&mut name).expect("Failed to read");
 
@@ -19,20 +22,20 @@ fn main() {
 
 
       
-        if number_of_papers == 3 && number_of_papers == 4 && number_of_papers == 5
+        if number_of_papers == 3 || number_of_papers == 4 || number_of_papers == 5
          {
-            println!(" {} Your incentive is 500,000",name );
+            println!(" {} Your incentive is N500,000",name );
         }
          else if number_of_papers >= 5 && number_of_papers <=10
          {
              println!("{} Your incentive is N800,000",name );
         }
-            else if number_of_papers >= 10 
+            else if number_of_papers >10 
             {
                 println!("{} Your incentive is N 100,000,000",name );
 
             }
-                 else
+                 else if number_of_papers <3
                   {
                        println!("{} Your number of incentive is N100,000 ",name);
                      }
